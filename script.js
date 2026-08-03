@@ -25,6 +25,8 @@ function getHumanChoise() {
         case "scissors":
             return choise;
             break;
+        default:
+            return "paper";
     }
 }
 
@@ -42,11 +44,26 @@ function playRound(humanChoise, computerChoise) {
     }
 }
 
+function playGame() {
+    playRound(getHumanChoise(), getComputerChoise());
+    
+    playRound(getHumanChoise(), getComputerChoise());
+
+    playRound(getHumanChoise(), getComputerChoise());
+
+    playRound(getHumanChoise(), getComputerChoise());
+
+    playRound(getHumanChoise(), getComputerChoise());
+
+    if (humanScore < computerScore) {
+        console.log("You won the game!, the computer loses!");
+    }
+    else {
+        console.log("The computer won the game!, You lose!")
+    }
+}
+
 let humanScore = 0;
 let computerScore = 0;
 
-const humanSelection = getHumanChoise();
-const computerSelection = getComputerChoise();
-
-playRound(humanSelection, computerSelection);
-
+playGame()
