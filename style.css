@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 150px;
+    background-color: blueviolet;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+h3{
+    color: bisque;
+}
+button{
+    color: brown;
+    size: 0px;
+}
